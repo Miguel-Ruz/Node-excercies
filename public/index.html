@@ -5,148 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Portafolio personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="./CSS/Mobile.css" media="(max-width: 581px)">
-    <link rel="stylesheet" href="./CSS/laptop.css" media="(max-width: 1263px)">
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <a href="#start">
-                <img class ="header-logo"src="./Assets/header-logo.svg" alt="">
-            </a> 
-            <nav>
-                <a class ="nav-item" href="#start">Inicio</a>
-                <a class ="nav-item" href="#projects">Proyectos</a>
-                <a class ="nav-item" href="#contact">Contacto</a>
-            </nav>
+    <div class="general-container">
+        <div class="sidebar">
+            <a class="headerlogo" href="">
+                <img src="" alt="">
+            </a>
+            <video src="https://cdn.dribbble.com/uploads/48226/original/b8bd4e4273cceae2889d9d259b04f732.mp4?1689028949" autoplay loop muted></video>
         </div>
-        <a class="header-button" href="https://drive.google.com/file/d/13OmMTVMqnYIAFFjV1x8UfkD3aWVyfU8h/view?usp=sharing" target="_blank" class="boton-pdf">Descarga mi C.V.</a>
-    </header>
-
-<div id="start" class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>¡Hola! <br>
-                Soy <span class=".hero-text--especial">Miguel Ruz</span></h1>
-            <p>Conoce mi trayectoria profesional.</p>
-        </div>
-        <a class="hero-button" href="https://www.linkedin.com/in/miguel-angel-ruz-torres-1367a1219/" target="_blank">Acerca de mi</a>
-    </div>
-    <img class="hero-image" src="./Assets/hero-image.png" alt="">
-</div>
-<div id="projects" class="projects-section">
-    <p class="projects-p">PROYECTOS</p>
-    <h2>"Conectando al mundo, un clic a la vez."</h2>
-    <article class="projects-p2">A lo largo de mi carrera he colaborado con personas muy talentosas, con el fin de conectar al mundo a travez de la tecnología, conoce un par de esos proyectos</article>
-</div>
-<div class="projects-cards">
-    <div class="card">
-        <a href="https://www.behance.net/gallery/164162963/More-views-website-UX-UI" class="card-image" target="_blank">
-            <img  src="./Assets/Moreviews.png" alt="portada de proyecto">
-        </a>
-        <div class="card-text">
-            <button class="card-tag">UX/UI</button>
-            <H3>More views</H3>
-            <p>Rediseño y mejoras de usabilidad a un producto ya planteado</p>
-        </div>
-    </div>
-    <div class="card">
-        <a href="https://www.behance.net/gallery/131861799/Portafolio-template" class="card-image" target="_blank">
-            <img src="./Assets/plantilla-portafolio.png" alt="portada de proyecto">
-        </a>
-        <div class="card-text">
-            <button class="card-tag">UI</button>
-            <H3>Plantilla de portafolio</H3>
-            <p>+2.1k de replicas en plantilla de “Portafolio personal” </p>
-        </div>
-    </div>
-    <div class="card">
-        <a href="https://www.behance.net/gallery/147230099/ToDo-Advance" class="card-image" target="_blank">
-            <img src="./Assets/todo.png" alt="portada de proyecto">
-        </a>
-        <div class="card-text">
-            <button class="card-tag">UX/UI</button>
-            <H3>ToDo advanced</H3>
-            <p>Diseño de una herramienta ToDo tomando como base Bootstrap</p>
-        </div>
-    </div>
-    <div class="card">
-        <a href="https://www.behance.net/gallery/128441045/SkyComeet-Mockups" class="card-image" target="_blank">
-            <img src="./Assets/skycoomet.png" alt="portada de proyecto">
-        </a>
-        <div class="card-text">
-            <button class="card-tag">UX/UI</button>
-            <H3>SkyComeet</H3>
-            <p>Mira la foto que se tomó en el espacio el día de tu cumpleaños</p>
-        </div>
-    </div>
-</div>
-<div class="testimonial-section">
-    <div class="section-title">
-        <p class="projects-p">TESTIMONIOS</p>
-        <h2 class="title-element">Conoce lo que mis colegas dicen de mi</h2>
-    </div>
-    <div class="testimonial-cards">
-        <div class="testimonial-card">
-            <div class="icon-zone">
-                <img src="Assets/icon-testimonial.svg" alt="">
-                <button class="card-tag">UX/UI</button>
+        <div class="container-rigth">
+            <div class="container">
+                <h1>Sign in to Dribbble    </h1>
+                <form id="loginForm">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <label for="password">Passsword</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="submit">Sign In</button>
+                </form>
+                <p id="error" class="error"></p>
             </div>
-            <H3 class="testiomnial-autor">Maria Victoria Bedoya</H3>
-            <p class="card-copy">Lorem ipsum dolor sit amet consectetur. Ac et quam odio massa nibh purus nibh. Aliquam tellus aliquet nisl purus id hendrerit arcu at. </p>
-        </div>
-        <div class="testimonial-card">
-            <div class="icon-zone">
-                <img class="puprple-icon" src="Assets/icon-testimonial.svg" alt="">
-                <button class="card-tag">DIRECTOR</button>
-            </div>
-            <H3 class="testiomnial-autor">Daniel Echeverri Morales</H3>
-            <p class="card-copy">Lorem ipsum dolor sit amet consectetur. Ac et quam odio massa nibh purus nibh. Aliquam tellus aliquet nisl purus id hendrerit arcu at. </p>
+            <script src="script.js"></script>
         </div>
     </div>
-</div>
-<div id="contact" class="contact-section">
-    <div class="section-title">
-        <p class="projects-p">CONTACTO</p>
-        <h2 class="title-element">Si tienes dudas, hablemos</h2>
-    </div>
-    <div class="form-container">
-        <form action="procesar.php" method="POST">
-            <fieldset>
-              <label for="nombre">Tu nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
-              
-              <label for="email">Tu E-mail</label>
-              <input type="email" id="email" name="email" placeholder="Ejemplo@hotmail.com">
-              
-              <label for="mensaje">Tu mensaje:</label>
-              <textarea id="mensaje" name="mensaje" placeholder="Hey..." rows="4" cols="50"></textarea>
-            </fieldset>
-            
-            <input type="submit" value="Enviar">
-          </form>
-          
-    </div>
-</div>
-<footer>
-    <a href="">
-        <img src="Assets/header-logo.svg" alt="es el logo">
-    </a>
-    <article class="article-footer">Todos los derechos reservados</article>
-    <div class="social-container">
-        <a href="https://www.instagram.com/miguel_rt11/" target="_blank">
-            <img src="Assets/Instagram.png" alt="es un icono de red social">
-        </a> 
-        <a href="https://www.linkedin.com/in/miguel-angel-ruz-torres-1367a1219/" target="_blank">
-            <img src="Assets/LinkedIn.png" alt="es un icono de red social">
-        </a> 
-        <a href="https://www.behance.net/miguel_ruz" target="_blank">
-            <img src="Assets/Behance.png" alt="es un icono de red social">
-        </a> 
-    </div>
-</footer>
 </body>
 </html>
