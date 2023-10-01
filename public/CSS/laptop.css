@@ -1,0 +1,21 @@
+.hero-image {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+.projects-cards {
+    width: 100vw;
+    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Assets/CARDS\ BG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Centrar contenido verticalmente y horizontalmente */
+    align-items: center;
+    justify-content: center;
+  }

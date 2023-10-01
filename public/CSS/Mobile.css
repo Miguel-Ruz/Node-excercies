@@ -1,0 +1,80 @@
+header{
+    padding: 16px 32px;
+}
+
+nav {
+    display: none;
+}
+
+.header-button {
+    padding: 8px 16px;
+}
+
+.hero {
+    padding: 64px 32px;
+}
+
+.hero-image {
+    display: none;
+}
+
+.projects-section {
+    height: fit-content;
+    padding: 64px 32px;
+}
+
+.projects-cards {
+    width: 100vw;
+    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./Assets/CARDS\ BG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Centrar contenido verticalmente y horizontalmente */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-image, img {
+    width: 100%;
+    padding: 0px;
+}
+
+.testimonial-section {
+    display: none;
+}
+
+.testimonial-cards {
+    width: 100vw;
+    height: fit-content;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-card {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.contact-section {
+    padding: 64px 32px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px;
+}
+
+.social-container {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
